@@ -1,10 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import Navi from './Navi';
+import CategoryList from './CategoryList';
+import ProductList from './ProductList';
+import { Col, Container, Row } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap'
 function App() {
   return (
     <div>
-<h2>HELLO FROM REACT</h2>
+      <Container>
+        <Row>
+          <Navi />
+        </Row>
+
+        <Row>
+          <Col xs="3">
+            <CategoryList />
+          </Col>
+          <Col xs="9">
+            <ProductList />
+
+          </Col>
+
+
+        </Row>
+      </Container>
+
+
+
+
+
+
     </div>
   );
 }
